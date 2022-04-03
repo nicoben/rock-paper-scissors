@@ -43,12 +43,16 @@ basic.forever(function on_forever() {
     strip.showColor(color)
     basic.pause(500)
 })
+function spin_arrow() {
+    basic.showArrow(ArrowNames.North)
+    basic.pause(1000)
+    basic.showArrow(ArrowNames.East)
+    basic.pause(1000)
+    basic.showArrow(ArrowNames.South)
+    basic.pause(1000)
+    basic.showArrow(ArrowNames.West)
+}
+
 basic.showIcon(IconNames.Happy)
 basic.pause(1000)
-basic.showArrow(ArrowNames.North)
-basic.pause(1000)
-basic.showArrow(ArrowNames.East)
-basic.pause(1000)
-basic.showArrow(ArrowNames.South)
-basic.pause(1000)
-basic.showArrow(ArrowNames.West)
+spin_arrow()

@@ -53,12 +53,16 @@ def on_forever():
     basic.pause(500)
 basic.forever(on_forever)
 
+def spin_arrow():
+    basic.show_arrow(ArrowNames.NORTH)
+    basic.pause(1000)
+    basic.show_arrow(ArrowNames.EAST)
+    basic.pause(1000)
+    basic.show_arrow(ArrowNames.SOUTH)
+    basic.pause(1000)
+    basic.show_arrow(ArrowNames.WEST)
+
 basic.show_icon(IconNames.HAPPY)
 basic.pause(1000)
-basic.show_arrow(ArrowNames.NORTH)
-basic.pause(1000)
-basic.show_arrow(ArrowNames.EAST)
-basic.pause(1000)
-basic.show_arrow(ArrowNames.SOUTH)
-basic.pause(1000)
-basic.show_arrow(ArrowNames.WEST)
+
+spin_arrow()
